@@ -1,1 +1,1 @@
-$.app = $.app || {}
+console.log "Hello Project !"
