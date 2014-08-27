@@ -8,8 +8,8 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 
 var paths = {
-    coffee: ['js/main.coffee', 'js/!(main)*.coffee'],
-    scss: ['css/scss/*.scss']
+    coffee: ['js/main.coffee', 'js/**/!(main)*.coffee'],
+    scss: ['css/scss/**/*.scss']
 };
 
 gulp.task('compass', function () {
