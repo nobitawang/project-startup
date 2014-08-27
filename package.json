@@ -1,7 +1,7 @@
 {
-  "name": "fbpastepaste",
-  "version": "0.0.1",
-  "description": "臉書貼貼",
+  "name": "projectstartup",
+  "version": "1.0.0",
+  "description": "Project Startup",
   "devDependencies": {
     "gulp": "~3.8.5",
     "gulp-concat": "~2.2.0",
