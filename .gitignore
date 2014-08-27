@@ -3,3 +3,4 @@ fingerprint.txt
 node_modules/
 dist/
 .sass-cache/
+js/components/
