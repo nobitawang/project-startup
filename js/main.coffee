@@ -1,4 +1,11 @@
-# get window, support nodejs and broswer
-root = exports ? this
-root.hello = "Hello Project !"
-console.log root.hello
+require.config
+  baseUrl: 'js/lib'
+  paths:
+    backbone: 'backbone/backbone'
+    underscore: 'underscore/underscore-min'
+    jquery: 'jquery/dist/jquery.min'
+
+  shim:
+    backbone:
+      deps: ['underscore', 'jquery']
+      exports: 'Backbone'
