@@ -2,6 +2,7 @@
   "name": "projectstartup",
   "version": "1.0.0",
   "description": "Project Startup",
+  "private": true,
   "devDependencies": {
     "gulp": "~3.8.5",
     "gulp-concat": "~2.2.0",
