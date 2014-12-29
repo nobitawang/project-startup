@@ -21,6 +21,7 @@ gulp.task('biuld:css', function () {
 gulp.task('biuld:js', function() {
     gulp.src(paths.js)
         .pipe(jshint())
+        .pipe(jshint.reporter('jshint-stylish'))
         .pipe(uglify())
         .pipe(concat('all.min.js'))
         .pipe(gulp.dest('./dist/js/'));
@@ -28,6 +29,8 @@ gulp.task('biuld:js', function() {
 
 gulp.task('biuld:js_dev', function() {
     gulp.src(paths.js)
+        .pipe(jshint())
+        .pipe(jshint.reporter('jshint-stylish'))
         .pipe(concat('all.src.js'))
         .pipe(gulp.dest('./dist/js/'));
 });
