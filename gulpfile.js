@@ -4,6 +4,7 @@ var gutil  = require('gulp-util');
 var cssmin = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var jshint = require('gulp-jshint');
 
 var paths = {
     js: ['js/**/*.js'],
@@ -19,6 +20,7 @@ gulp.task('biuld:css', function () {
 
 gulp.task('biuld:js', function() {
     gulp.src(paths.js)
+        .pipe(jshint())
         .pipe(uglify())
         .pipe(concat('all.min.js'))
         .pipe(gulp.dest('./dist/js/'));
